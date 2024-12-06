@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class SurveyService {
-  private baseUrl = 'http://localhost:3000/api';
+  private baseUrl = 'https://theguardian-4586b0da3368.herokuapp.com/api';
 
   constructor(private http: HttpClient) { }
 
