@@ -4,7 +4,7 @@
     "authorizationParams": {
       "audience": "https://the_guardian"
     },
-    "apiUri": "http://localhost:3001",
+    "apiUri": " https://mean-project-eight.vercel.app/",
     "appUri": "http://localhost:4200",
     "errorPath": "/error"
   }
