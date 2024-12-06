@@ -516,12 +516,9 @@ app.delete('/api/delete-user-data', async (req, res) => {
   });
 
   
-// Démarrer le serveur
-app.listen(port, () => {
-    console.log(`Serveur démarré sur http://localhost:${port}`);
-});
+
 
 // Gestion des routes non trouvées
-app.use((req, res) => {
-    res.status(404).json({ error: 'Route introuvable.' });
-});
+//app.use((req, res) => {
+//    res.status(404).json({ error: 'Route introuvable.' });
+//});

@@ -6,7 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class SurveyService {
-  private baseUrl = 'https://theguardian-4586b0da3368.herokuapp.com/api';
+  private baseUrl = 'http://localhost:3000/api';
+  //private baseUrl = 'https://theguardian-4586b0da3368.herokuapp.com/api';
+
 
   constructor(private http: HttpClient) { }
 
@@ -73,7 +75,7 @@ export class SurveyService {
   deleteUserData(): Observable<any> {
     return this.http.delete(`${this.baseUrl}/delete-user-data`);
   }
-  deletePosology(posologyId: string): Observable<any> {
+    deletePosology(posologyId: string): Observable<any> {
     return this.http.delete(`http://localhost:3000/api/posologies/${posologyId}`);
   } 
 
